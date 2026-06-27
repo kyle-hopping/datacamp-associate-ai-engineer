@@ -41,3 +41,13 @@ __import__('pysqlite3')
 import sys
 sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
 import chromadb
+
+# Load the dataset
+import pandas as pd
+reviews = pd.read_csv("womens_clothing_e-commerce_reviews.csv")
+
+# Display the first few entries
+reviews.head()
+
+# Start coding here
+# Use as many cells as you need.
