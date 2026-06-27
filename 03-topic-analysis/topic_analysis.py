@@ -27,8 +27,15 @@ reviews, extract meaningful insights, and present your findings.
 # Import the necessary libraries
 import pandas as pd
 from openai import OpenAI
+import os
+import nump as np
+from sklearn.manifold import TSNE
+import matplotlib.pyplot as plt
+from scipy.spatial import distance
+from chromadb.utils.embedding_functions import OpenAIEmbeddingFunction
 
 # Run this cell to install ChromaDB if desired
+"""
 try:
     assert version('chromadb') == '0.4.17'
 except:
@@ -38,6 +45,7 @@ try:
 except:
     !pip install pysqlite3-binary==0.5.2
 __import__('pysqlite3')
+"""
 import sys
 sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
 import chromadb
