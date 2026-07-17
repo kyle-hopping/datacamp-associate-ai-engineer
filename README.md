@@ -24,7 +24,24 @@ The Associate AI Engineer for Developers track focuses on integrating AI into so
 
 ## Status
  
-🚧 In progress — projects will be added to this repository as they are completed.
+✅ Complete — all projects for the track have been finished.
+
+## Projects
+
+### 1. [Paris Trip Planner](01-paris-trip-planner/paris_trip_planner.py)
+An AI-powered travel guide chatbot for a fictional tourism company, Peterman Reality Tours. Uses the OpenAI Chat Completions API with a system prompt to answer common traveler questions about Paris landmarks in a running multi-turn conversation.
+
+**Concepts:** system prompts, multi-turn conversation state, `gpt-4o-mini`
+
+### 2. [Organize Medical Transcriptions](02-organize-med-transcriptions/organize_med_transcriptions.py)
+Extracts structured patient data (age, recommended treatment) from unstructured medical transcription text using OpenAI function calling, then looks up matching ICD-10 codes for each treatment and compiles the results into a structured DataFrame.
+
+**Concepts:** function calling / tool schemas, structured data extraction, `pandas`
+
+### 3. [Topic Analysis on E-Commerce Reviews](03-topic-analysis/topic_analysis.py)
+Analyzes women's clothing e-commerce reviews using OpenAI text embeddings. Reviews are embedded, visualized in 2D with t-SNE, categorized against predefined topics (Quality, Fit, Style, Comfort) by cosine similarity, and stored in a ChromaDB vector database for similarity search.
+
+**Concepts:** text embeddings, dimensionality reduction (t-SNE), vector databases (ChromaDB), semantic similarity search
  
 ## Setup
  
